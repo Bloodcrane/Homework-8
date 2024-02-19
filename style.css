@@ -1,0 +1,52 @@
+body{
+    background-color: #1b1b1b;
+    color: #fff;
+    font-family: monospace;
+    background-image: url('./images/noise-dark.png');
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.post {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.212);
+    background-image: url('./images/noise-dark.png');
+    /* background-image: url('./images/noise-dark.png'), linear-gradient(to top, #131313, #0f0f0f); */
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s, box-shadow 0.3s, color 0.3s, background-image 0.3s;
+}
+
+.post:hover{
+    background-image: url('./images/noise-light.png');
+    /* background-image: url('./images/noise-light.png'), linear-gradient(to top, #202020, #161616); */
+    transform: translateY(5px); 
+}
+
+.post:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 3px #000000;
+}
+
+p {
+    color: #c4c4c4;
+    font-size: 16px;
+    margin: 0;
+    text-shadow: 2px 2px 3px #000000;
+}
