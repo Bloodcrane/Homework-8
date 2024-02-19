@@ -30,7 +30,7 @@ body{
 .post:hover{
     background-image: url('./images/noise-light.png');
     /* background-image: url('./images/noise-light.png'), linear-gradient(to top, #202020, #161616); */
-    transform: translateY(5px); 
+    transform: translateX(10px); 
 }
 
 .post:not(:last-child) {
